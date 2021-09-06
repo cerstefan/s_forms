@@ -8,6 +8,7 @@
 S_FORMS is a form generator.
 Author: Cerlincă Ștefan
 Year: 2021
+Version: 1.0
 
 
 To use this patch simply follow this steps:
