@@ -1,0 +1,512 @@
+/* flex */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.left {
+  justify-content: start;
+  text-align: left;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.w100 {
+  width: 100%;
+}
+
+
+
+/* position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+
+/* align */
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+form {
+  max-width: 614px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+label, input, textarea, .input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13.3333px;
+  color: black;
+  /* letter-spacing: 0.1em;
+  line-height: 1.5; */
+  text-align: left;
+
+  /* padding-bottom: 8px; */
+  margin-top: 4px;
+}
+
+input, textarea, .input {
+  margin: .5em .5em;
+  user-select: auto;
+}
+
+label {
+  width: 100%;
+  text-align: left;
+
+  padding: 7px 7px 0;
+  margin-bottom: -5px;
+
+  /* margin: 0 .5em -2.1em; */
+}
+
+input, .input {
+  height: 28px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.err {
+  width: 100%;
+  min-height: 28px;
+  font-family: auto;
+  font-size: 13.3333px;
+  font-weight: bold;
+  line-height: 15px;
+  margin: -.5em .5em .5em;
+  padding: 7px;
+  color: #ff4545;
+  background-color: #ffeeee;
+}
+
+  /* pt checkbox */
+  label+span.err {
+    margin: 0 .5em .5em;
+    background-color: transparent;
+  }
+
+  label[for="gdpr"]+span.err {
+    margin: 0 .5em .5em;
+    background-color: #ffeeee;
+  }
+
+
+.checkboxes {
+  flex-wrap: wrap;
+}
+
+.checkboxes div {
+  width: 33%;
+}
+
+/* label for input type: checkbox */
+/* VEZI IN JQUERY */
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  /* background-color: #ffffff; */
+  border: 1px solid #959595;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+  /* padding: 9px; */
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+
+
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 0;
+  margin-right: 5px;
+  border-radius: 2px;
+
+  cursor: pointer;
+}
+
+input[type="checkbox"]:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"]:checked {
+  /* background-color: #e9ecee; */
+	border: 1px solid #959595;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+input[type="checkbox"]:checked:after {
+  content: '\2714';
+  font-size: 16px;
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  color: #03aacf;
+}
+
+input[type="checkbox"]+span {
+  line-height: 19px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  height: auto;
+
+  cursor: pointer;
+}
+
+.custom-file-upload * {
+  color: white;
+}
+
+.custom-file-upload i {
+  padding-right: 7px;
+  font-size: x-large;
+}
+
+.submit_button:hover {
+  box-shadow: 0 100px rgb(50 50 50 / 8%) inset;
+}
+
+.submit_button:active {
+  transform: translateY(1px);
+}
+
+
+input[type="range"] {
+  margin: 0;
+}
+
+input[type="range"]+.err {
+  margin: 0;
+}
+
+.range-label {
+  margin: .5em .5em;
+  color: #667;
+}
+
+.range-label span {
+  font-weight: bold;
+}
+
+
+.placeholder2 {
+  font-weight: 400;
+  font-size: .9em;
+  font-style: italic;
+
+  margin-top: 5px;
+}
+
+
+.form_respond {
+  color: #667;
+
+  max-width: 614px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  border-radius: 2px;
+  padding: 1.5em;
+}
+
+.form_respond i {
+  font-size: xxx-large;
+  padding: 10px 20px;
+  color: #0ba2c4;
+}
+
+
+/* HOVER, FOCUS ETC. */
+/* V light */
+
+input[type="range"]:focus {
+  outline: 0;
+}
+
+
+
+
+
+/* TEMPLATES */
+
+/* //////////////////////////////
+/////////////////////////////////// 
+///////////////////////////////////
+///////////////////////////////////
+/////////////////////////////////// 
+LIGHT THEME
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////*/
+
+.light {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  border-radius: 2px;
+
+  padding: 1.5em;
+}
+
+.light input, .light textarea {
+    background-color: #beebf5;
+    border: 1px solid #959595;
+    padding: 7px;
+
+    font-weight: bold;
+    font-size: 13.3333px;
+    letter-spacing: normal;
+    line-height: initial;
+}
+
+.light label, .light input, .light textarea {
+    color: #316672;
+
+}
+
+.light input[type="checkbox"] {
+  background-color: #f6f3f3;
+}
+
+.light input[type="checkbox"]:checked {
+  /* background-color: #beebf5; */
+}
+
+
+
+
+
+/* PLACE HOLDER */
+
+.light input::-webkit-input-placeholder, .light textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6b6b6b;
+}
+.light input::-moz-placeholder, .light textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #6b6b6b
+}
+.light input:-ms-input-placeholder, .light textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #6b6b6b
+}
+.light input:-moz-placeholder, .light textarea:-moz-placeholder { /* Firefox 18- */
+  color: #6b6b6b
+}
+
+
+
+/* BUTTONS */
+
+.button {
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+
+  padding: 7px;
+  margin: .5em .5em;
+
+  transition: none;
+  cursor: pointer;
+}
+
+.light .submit_button {
+  /* max-width: 300px; */
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  
+  margin: .5em .5em;
+  background-color: #0ba2c4;
+  color: #fff;
+}
+
+
+/* HOVER, FOCUS ETC. */
+
+.light input:focus, .light textarea:focus {
+  outline: 1px solid #0ba2c4;
+}
+
+.button:hover {
+  opacity: 1;
+  box-shadow: 0 100px rgb(50 50 50 / 8%) inset;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+/* checkbox hover in Jquery
+inca nu am deslusit misterul */
+
+
+
+
+
+/* //////////////////////////////
+/////////////////////////////////// 
+///////////////////////////////////
+///////////////////////////////////
+/////////////////////////////////// 
+GRAPEFRUIT THEME
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////*/
+
+.grape {
+  max-width: 100%;
+  padding: 1.5em;
+}
+
+.grape input, .grape textarea {
+    background-color: #c45b63;
+    border: 1px solid #9b3838;
+    padding: 7px;
+
+    font-weight: bold;
+    font-size: 13.3333px;
+    letter-spacing: normal;
+    line-height: initial;
+}
+
+.grape label, .grape input, .grape textarea {
+    color: #ffff;
+
+}
+
+.grape input[type="checkbox"] {
+  background-color: #f6f3f3;
+}
+
+.grape input[type="checkbox"]:checked {
+  /* background-color: #beebf5; */
+}
+
+/* PLACE HOLDER */
+
+.grape input::-webkit-input-placeholder, .grape textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9b3838;
+}
+.grape input::-moz-placeholder, .grape textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #9b3838
+}
+.grape input:-ms-input-placeholder, .grape textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #9b3838
+}
+.grape input:-moz-placeholder, .grape textarea:-moz-placeholder { /* Firefox 18- */
+  color: #9b3838
+}
+
+
+/* BUTTONS */
+
+.grape .submit_button {
+  /* max-width: 300px; */
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  
+  margin: .5em .5em;
+  background-color: #ffff;
+  color: #595555;
+}
+
+.grape+.form_respond {
+  color: #fff;
+  background-color: #fd666f8c;
+}
+
+.grape+.form_respond i {
+  color: #fff;
+}
+
+/* HOVER, FOCUS ETC. */
+
+.grape input:focus, .grape textarea:focus {
+  outline: 0px solid #ffff;
+  border-color: #ffff;
+}
+
+.button:hover {
+  opacity: 1;
+  box-shadow: 0 100px rgb(50 50 50 / 8%) inset;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+
+
+/* ERROR */
+
+.grape .err {
+  background-color: #0000004f;
+  color: yellow;
+}
+
+  /* pt checkbox */
+  .grape label+span.err {
+    margin: 0 .5em .5em;
+    background-color: transparent;
+  }
+
+  .grape label[for="gdpr"]+span.err {
+    margin: 0 .5em .5em;
+    background-color: #0000004f;
+    color: yellow;
+  }
+
+
+/* //////////////////////////////
+/////////////////////////////////// 
+///////////////////////////////////
+///////////////////////////////////
+/////////////////////////////////// 
+DARK THEME
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////*/
